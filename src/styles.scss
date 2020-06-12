@@ -6,3 +6,8 @@ body { margin: 0; }
 * {
   font-family: 'Chakra Petch', sans-serif !important;
 }
+.modal-backdrop {
+  z-index: -1;
+}
+
+

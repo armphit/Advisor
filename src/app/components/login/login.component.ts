@@ -36,15 +36,15 @@ export class LoginComponent implements OnInit {
       if (httpRespon.response.success) {
         //this.router.navigate(["/home"]);
         this.service.navRouter(this.oldPath);
-        alert(httpRespon.response.message)
+
         localStorage.setItem(
           "userLogin",
           JSON.stringify(httpRespon.response.data)
         );
 
-        //alert(httpRespon.response.message);
-      } else {
         alert(httpRespon.response.message)
+      } else {
+        this.msg='ชื่อหรือรหัสผ่านไม่ถูกต้อง'
 
       }
     } else {
